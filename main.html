@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <script src="main.js" async defer></script>
+    <script src="./js/text-animation.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b52a0f1bdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="world.js"" async defer></script>
+    
+  </head>
+  <body>
+    <div class="grid" id="container">
+      <div class="switch">
+        <label class="switchMode">
+            <input type="checkbox" id="colorMode" checked onclick="switchFunc()">
+            <span class="slider round"></span>
+          </label>
+      </div>
+      <div class="nav" id="navigation">
+        <div class="box-a">
+          <img class="logo" src="./img/logo.svg" />
+        </div>
+        <div class="box-b" id="card">
+          <a href="#">
+            <p class="nav-text">Who Am I?</p>
+            <span class="material-icons-outlined">emoji_people</span>
+          </a>
+        </div>
+        <div class="box-c" id="card">
+          <a href="#">
+            <p class="nav-text">My Path</p>
+            <span class="material-icons-outlined">follow_the_signs</span>
+          </a>
+        </div>
+        <div class="box-d" id="card">
+          <a href="./pages/mywork.html">
+            <p class="nav-text">My Work</p>
+            <span class="material-icons-outlined">engineering</span>
+          </a>
+        </div>
+        <div class="box-e" id="card">
+          <a href="./darkMode.html">
+            <p class="nav-text">Contact</p>
+            <span class="material-icons-outlined">dialpad</span>
+          </a>
+        </div>
+        <div class="box-f">
+          <a href="https://www.linkedin.com/in/piotr-wojtasik-991586203/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/piotrwojtasik" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://codepen.io/piotrwojtasik" target="blank"><i class="fa-brands fa-codepen"></i></a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header-p" id="content-text">
+          <h1>Jestem
+          <span
+             class="txt-rotate"
+             data-period="2000"
+             data-rotate='[ "Piotr Wojtasik.", "Front-end Developerem.", "najlepszy.", "dyslektykiem.", "po prostu sobą." ]'>
+            </span>
+        </h1>
+      </div>
+        <div class="content-p" id="content-text">
+          <h3>Witaj w moim świecie</h3>
+        </div>
+        <div class="bottom-p" id="content-text">
+          <h5>Stworzę dla Ciebie wszystko</h5>
+        </div>
+      </div>
+      <div class="js" id="js">
+        <canvas id="c"></canvas>
+        
+      </div>
+      <div class="bottom">
+        <div class="bottom-logo" id="bottom-box">
+          <img class="logo" src="./img/logo.svg" />
+        </div>
+        <div class="bottom-text" id="bottom-box">2022 portfolio made by piotrwojtasik.me</div>
+      </div>
+    </div>
+  </body>
+</html>

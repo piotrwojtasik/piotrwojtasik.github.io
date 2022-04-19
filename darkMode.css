@@ -1,0 +1,218 @@
+
+.web-wrapper {
+  width: 100%;
+  height: 200vh;
+  font-family: 'VT323', monospace;
+  
+}
+#progress {
+  position: fixed;
+  width: 99.5%;
+}
+.progress {
+  z-index: 101;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: #92CC41;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png');
+  transition: all linear 0.1s;
+  height: 35px;
+  border: 5px solid black;
+  min-width: 1%;
+
+}
+.start-page {
+  width: 99.5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #EED6C4;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png')
+  
+}
+.main-nav {
+  width: 99.5%;
+  height: 75px;
+  background-color: red;
+  position: fixed;
+  z-index: 100;
+  display: none;
+}
+.start-page #space-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.container-sec {
+  height: 100vh;
+  width: 99.5%;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png');
+  background-color: #e6584c;
+  display: grid;
+  grid-template-columns:0.4fr repeat(6,1fr 2fr) 0.4fr;
+  grid-template-rows: 0.7fr repeat(12,1fr) 0.7fr;
+  z-index: 2;
+  font-size: 2rem;
+}
+/*   background-color: #DE8971; */
+
+.nav {
+  grid-area: 2 / 2 / 14 / 5;
+  display: flex;
+  
+}
+
+.content {
+  grid-area: 2 / 5 / 14 / 12;
+  overflow: auto;
+}
+.right-side {
+  grid-area: 2 / 12 / 14 / 14;
+}
+
+.nav button, a {
+  width: 100%;
+  height: 75px;
+}
+.content div {
+  height: 30%;
+}
+
+.right-side div {
+  width: 100%;
+  height: 100%;
+}
+.nav div {
+  width: 100%;
+  height: 100%;
+}
+.container-third {
+  width: 100%;
+  height: 50vh;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png')
+}
+.container-fourth {
+  width: 100%;
+  height: 50vh;
+}
+#darkcontainer {
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png')
+}
+.container-five {
+  width: 100%;
+  height: 30vh;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png')
+}
+.container-six {
+  width: 100%;
+  height: 100vh;
+  background-color:#8fe2ec;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png')
+
+
+}
+.container-seven {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFE9D6;
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/851550/dotnoise-light-grey.png');
+}
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+}
+#right-side a {
+  display: flex;
+  justify-content:space-around;
+  font-size: 1.5rem;
+
+}
+#content-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  overflow: auto;
+  justify-content: space-around;
+}
+#framework { 
+  background-color:#1E1E1E;
+  color: white;
+}
+.container-fourth section {
+  width: 99.5%;
+  height: 100%;
+}
+.up {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+}
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+}
+.icon-list {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.box {
+  animation: bounce alternate infinite cubic-bezier(.2, .65, .6, 1);
+}
+
+@keyframes bounce {
+  from {transform:translateY(0px);}
+  to {transform: translateY(var(--bounce-offset))}
+}
+.nes-mario {
+  --bounce-offset: -10px;
+  animation-duration: 500ms;
+}
+.nes-ash {
+  --bounce-offset: -15px;
+    animation-duration: 400ms;
+}
+
+.nes-pokeball {
+  --bounce-offset: -10px;
+  animation-duration: 500ms;
+}
+.nes-bulbasaur {
+  --bounce-offset: -15px;
+  animation-duration: 400ms;
+}
+
+.nes-charmander {
+  --bounce-offset: -10px;
+  animation-duration: 500ms;
+}
+
+.nes-squirtle {
+  --bounce-offset: -15px;
+  animation-duration: 400ms;
+}
+
+.nes-kirby {
+  --bounce-offset: -10px;
+  animation-duration: 500ms;
+}
+
+box:hover {
+  animation-play-state: paused;
+
+}
