@@ -1,156 +1,158 @@
 body {
-    padding: 3em 2em;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    background: #111111;
+  padding: 3em 2em;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  background: #111111;
 }
-.retro a, .standard a, .last a {
-    display:flex;
-    width: 100%;
-    height: 100%;
+.retro a,
+.standard a,
+.last a {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .container {
-    max-width: 1890px;
-    width: 100%;
-    margin: 50px auto 0;
-    opacity: 0;
-    position: relative;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    -webkit-animation: 1s appear 1 forwards;
-    -moz-animation: 1s appear 1 forwards;
-    -o-animation: 1s appear 1 forwards;
-    animation: 1s appear 1 forwards;
+  max-width: 1890px;
+  width: 100%;
+  margin: 50px auto 0;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-animation: 1s appear 1 forwards;
+  -moz-animation: 1s appear 1 forwards;
+  -o-animation: 1s appear 1 forwards;
+  animation: 1s appear 1 forwards;
 }
 .stage {
   display: flex;
   justify-content: center;
+  max-width: 1890px;
+  width: 100%;
+  height: 400px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.element {
+  background: green;
+  width: 386px;
+  -webkit-transform-origin: 50% 50%;
+  height: inherit;
+  margin: 0 7px 0 0;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.element.active {
+  width: 566px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.element.inactive {
+  width: 446px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 0.4;
+}
+.element.retro {
+  background: url("../img/retro.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.element.standard {
+  background: url("../img/modern.png") 30% 0 no-repeat;
+  background-size: cover;
+}
+.element.last {
+  background: url("../img/future.png") 45% 0 no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 900px) {
+  .container {
     max-width: 1890px;
-    width: 100%;
-    height: 400px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
   }
   .element {
-    background: green;
     width: 386px;
-    -webkit-transform-origin: 50% 50%;
-    height: inherit;
-    margin: 0 7px 0 0;
-    display: inline-block;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .element.active {
-    width: 566px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
   }
   .element.inactive {
     width: 446px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    opacity: 0.4;
   }
-  .element.retro {
-    background: url('../img/retro.png') 50% 0 no-repeat;
-    background-size: cover;
+  .element.active {
+    width: 566px;
   }
-  .element.standard {
-    background: url('../img/modern.png') 30% 0 no-repeat;
-    background-size: cover;
+  .stage {
+    max-width: 1890px;
+    height: 700px;
   }
-  .element.last {
-    background: url('../img/future.png') 45% 0 no-repeat;
-    background-size: cover;
+}
+@media all and (max-width: 660px) {
+  .container {
+    max-width: 335px;
   }
-  @media all and (min-width: 900px) {
-    .container {
-      max-width: 1890px;
-    }
-    .element {
-      width: 386px;
-    }
-    .element.inactive {
-      width: 446px;
-    }
-    .element.active {
-      width: 566px;
-    }
-    .stage {
-      max-width: 1890px;
-      height: 700px;
-    }
+  .element {
+    width: 101px;
   }
-  @media all and (max-width: 660px) {
-    .container {
-      max-width: 335px;
-    }
-    .element {
-      width: 101px;
-    }
-    .element.inactive {
-      width: 61px;
-    }
-    .element.active {
-      width: 181px;
-    }
-    .stage {
-      max-width: 335px;
-    }
+  .element.inactive {
+    width: 61px;
   }
-  @-webkit-keyframes appear {
-    15% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .element.active {
+    width: 181px;
   }
-  @-moz-keyframes appear {
-    15% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .stage {
+    max-width: 335px;
   }
-  @-o-keyframes appear {
-    15% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+@-webkit-keyframes appear {
+  15% {
+    opacity: 0;
   }
-  @keyframes appear {
-    15% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
+}
+@-moz-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
