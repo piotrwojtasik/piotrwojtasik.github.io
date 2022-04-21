@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
 .web-wrapper {
   width: 100%;
   height: 200vh;
@@ -189,3 +190,43 @@ section .row div {
 
 /* Pure CSS section => image */
 
+.seven-wrap {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+.seven-wrap div {
+  width: 100%;
+  height: 100%;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+.row2 {
+  background-image: url('./img/snake.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.row3 {
+  padding: 0px;
+  margin: 0px;
+  background-image: url('./img/pipe.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row3 img {
+  max-height: 300px;
+  transition: 300ms;
+
+}
+.row3 img:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
