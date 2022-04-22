@@ -14,6 +14,13 @@ body {
   width: 100%;
   height: 100%;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: bottom;
+  align-items: center;
+  color: white;
+}
 .container {
   max-width: 1890px;
   width: 100%;
@@ -155,4 +162,22 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.name {
+	    text-align: center;
+	    color: #fcedd8;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 700;
+      text-shadow: 2px 2px 0px #eb452b, 
+                  4px 4px 0px #efa032, 
+                  6px 6px 0px #46b59b, 
+                  7px 7px 0px #017e7f, 
+                  8px 8px 0px #052939, 
+                  9px 9px 0px #c11a2b;
+}
+.about {
+  text-align: center;
+  color: #fcedd8;
+   font-family: 'Niconne', cursive;
 }
