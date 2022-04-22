@@ -8,6 +8,7 @@
   position: fixed;
   width: 99.5%;
 }
+
 .progress {
   z-index: 101;
   position: fixed;
@@ -229,4 +230,133 @@ section .row div {
 .row3 img:hover {
   transform: scale(1.1);
   transition: 300ms;
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .start-page {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+.container-sec {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+}
+.container-sec .content {
+  min-height: 650px;
+}
+.container-sec .content i {
+  display: none;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+.container-seven .row3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-seven img {
+  width: 40%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .start-page {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+.container-sec {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+}
+.container-sec .content {
+  min-height: 650px;
+}
+.container-sec .content i {
+  display: none;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+.container-seven .row3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-seven img {
+  width: 40%;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .start-page {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+.container-sec {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+}
+.container-sec .content {
+  min-height: 650px;
+}
+.container-sec .content i {
+  display: none;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+.container-seven .row3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-seven img {
+  width: 40%;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .start-page {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+.container-sec {
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+}
+.container-sec .content {
+  min-height: 650px;
+}
+.container-sec .content i {
+  display: none;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+.container-seven .row3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-seven img {
+  width: 40%;
+}
 }
