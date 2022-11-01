@@ -226,14 +226,14 @@ section .row div {
   font-size: 5rem;
 }
 .row2 {
-  background-image: url('./img/snake.svg');
+  background-image: url('../img/snake.svg');
   background-repeat: no-repeat;
   background-position: 50%;
 }
 .row3 {
   padding: 0px;
   margin: 0px;
-  background-image: url('./img/pipe.svg');
+  background-image: url('../img/pipe.svg');
   background-repeat: no-repeat;
   background-position: 50%;
   display: flex;
