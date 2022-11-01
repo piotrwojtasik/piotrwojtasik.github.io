@@ -3,7 +3,7 @@ import { GLTFLoader } from "https://cdn.skypack.dev/three@0.128.0/examples/jsm/l
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js";
 
 //const canvas = document.querySelector('.webgl')
-/* const scene = new THREE.Scene();
+ const scene = new THREE.Scene();
 scene.background = new THREE.Color('blue');
 
 
@@ -60,7 +60,7 @@ scene.background = new THREE.Color('blue');
                 renderer.render( scene, camera);
             }
 
-			animate(); */
+			animate();
 
 function main() {
   const canvas = document.querySelector("#c");

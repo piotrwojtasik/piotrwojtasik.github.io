@@ -9,8 +9,17 @@
   "author": "Piotr Wojtasik",
   "license": "ISC",
   "dependencies": {
+    "gulp-v4": "^4.0.0-alpha.5",
     "jquery": "^3.6.0",
     "nes.css": "^2.3.0",
     "three": "^0.139.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
   }
 }
